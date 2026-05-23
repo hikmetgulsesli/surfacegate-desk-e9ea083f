@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ticket Editor - SurfaceGate Desk</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#737685",
+                        "primary-fixed": "#dae2ff",
+                        "on-tertiary-container": "#ffc6b2",
+                        "surface-tint": "#0c56d0",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "inverse-on-surface": "#edf0ff",
+                        "on-secondary-container": "#51617e",
+                        "tertiary-fixed": "#ffdbcf",
+                        "surface-container-high": "#e1e8ff",
+                        "surface-container": "#e9edff",
+                        "surface": "#faf9ff",
+                        "on-secondary-fixed-variant": "#374763",
+                        "primary": "#003d9b",
+                        "tertiary-container": "#a33500",
+                        "inverse-primary": "#b2c5ff",
+                        "secondary-fixed": "#d6e3ff",
+                        "on-tertiary-fixed": "#380d00",
+                        "inverse-surface": "#1d3054",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#0052cc",
+                        "on-surface": "#051a3e",
+                        "secondary": "#4f5f7b",
+                        "surface-variant": "#d8e2ff",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#c4d2ff",
+                        "surface-dim": "#ccdaff",
+                        "on-primary-fixed-variant": "#0040a2",
+                        "secondary-fixed-dim": "#b7c7e8",
+                        "on-error-container": "#93000a",
+                        "background": "#faf9ff",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f1f3ff",
+                        "tertiary": "#7b2600",
+                        "on-secondary-fixed": "#091c35",
+                        "surface-container-highest": "#d8e2ff",
+                        "secondary-container": "#cdddff",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#434654",
+                        "surface-bright": "#faf9ff",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c3c6d6",
+                        "on-tertiary-fixed-variant": "#812800",
+                        "on-primary-fixed": "#001848",
+                        "on-background": "#051a3e",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb59b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sidebar-width": "240px",
+                        "compact-row-height": "36px",
+                        "gutter-table": "8px",
+                        "standard-row-height": "48px",
+                        "unit": "4px",
+                        "container-padding": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "code": ["JetBrains Mono"],
+                        "body-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "code": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+                        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02rem", "fontWeight": "600"}],
+                        "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01rem", "fontWeight": "600"}],
+                        "headline-md": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                        "label-sm": ["11px", {"lineHeight": "12px", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar (Linear/Transactional layout, minimized nav) -->
+<header class="bg-surface border-b border-outline-variant h-standard-row-height sticky top-0 z-40 w-full flex items-center justify-between px-container-padding">
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:bg-surface-container rounded p-1 transition-colors duration-200" title="Go Back">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="font-headline-lg text-headline-lg font-black text-primary">SurfaceGate Desk</div>
+<div class="h-6 w-px bg-outline-variant mx-2"></div>
+<div class="font-headline-md text-headline-md text-on-surface">Edit Ticket TKT-8924</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Editing as John Doe</span>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto w-full max-w-[800px] mx-auto py-8 px-container-padding">
+<!-- Unsaved Changes Banner -->
+<div class="bg-surface-container-high border border-outline-variant rounded mb-6 p-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary fill-icon">info</span>
+<span class="font-body-sm text-body-sm text-on-surface">You have unsaved changes. Please save to update the ticket.</span>
+</div>
+<form class="space-y-6">
+<!-- Subject -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="subject">
+                    Subject <span aria-hidden="true" class="text-error">*</span>
+</label>
+<input class="w-full h-8 px-2 border border-outline-variant rounded bg-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md text-on-surface transition-shadow" id="subject" name="subject" required="" type="text" value="System performance degradation during peak hours"/>
+</div>
+<!-- Description -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="description">
+                    Description <span aria-hidden="true" class="text-error">*</span>
+</label>
+<!-- Simulation of an empty required field with validation error -->
+<textarea aria-describedby="description-error" aria-invalid="true" class="w-full p-2 border border-error rounded bg-error-container/10 focus:outline-none focus:ring-2 focus:ring-error focus:border-transparent font-body-md text-body-md text-on-surface transition-shadow" id="description" name="description" required="" rows="5"></textarea>
+<p class="font-body-sm text-body-sm text-error flex items-center gap-1 mt-1" id="description-error">
+<span class="material-symbols-outlined text-[16px]">error</span>
+                    Description is required to proceed.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Priority -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="priority">
+                        Priority
+                    </label>
+<select class="w-full h-8 px-2 border border-outline-variant rounded bg-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md text-on-surface transition-shadow" id="priority" name="priority">
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option selected="" value="high">High</option>
+<option value="critical">Critical</option>
+</select>
+</div>
+<!-- Queue -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="queue">
+                        Queue
+                    </label>
+<select class="w-full h-8 px-2 border border-outline-variant rounded bg-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md text-on-surface transition-shadow" id="queue" name="queue">
+<option value="general">General Support</option>
+<option value="network">Network Infrastructure</option>
+<option selected="" value="software">Software Development</option>
+<option value="hardware">Hardware Provisioning</option>
+</select>
+</div>
+</div>
+<!-- Assignee -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="assignee">
+                    Assignee
+                </label>
+<div class="relative">
+<input class="w-full h-8 px-2 pl-8 border border-outline-variant rounded bg-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-body-md text-on-surface transition-shadow" id="assignee" name="assignee" type="text" value="Sarah Jenkins"/>
+<span class="material-symbols-outlined absolute left-2 top-1.5 text-on-surface-variant text-[20px]">person</span>
+</div>
+</div>
+<!-- Action Area -->
+<div class="pt-6 border-t border-outline-variant flex items-center justify-end gap-3">
+<button class="px-4 py-2 rounded font-label-md text-label-md text-secondary border border-secondary hover:bg-surface-container transition-colors duration-150" type="button">
+                    Cancel
+                </button>
+<button class="px-4 py-2 rounded font-label-md text-label-md text-on-primary bg-primary-container hover:bg-primary transition-colors duration-150 flex items-center gap-2 shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+                    Save Changes
+                </button>
+</div>
+</form>
+</main>
+</body></html>

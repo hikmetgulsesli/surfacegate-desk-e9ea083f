@@ -1,0 +1,79 @@
+[
+  {
+    "screenId": "f0ca6681211e4c8ebb895b9bab3af35a",
+    "title": "Ticket Editor - SurfaceGate Desk",
+    "htmlFile": "f0ca6681211e4c8ebb895b9bab3af35a.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzA1MDA2MmIzYTk5ODRhMjE4MmUwOTY0ZTZlNjlmZmU5EgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzQ2MjAyMDUyMzU3MDIxNzk2MA&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/surfacegate-desk-e9ea083f/stitch/f0ca6681211e4c8ebb895b9bab3af35a.html",
+    "surfaceIds": [
+      "SURF_TICKET_EDITOR"
+    ]
+  },
+  {
+    "screenId": "ec629ee7e4a04b5f9a507400307c0fa3",
+    "title": "Insights - SurfaceGate Desk",
+    "htmlFile": "ec629ee7e4a04b5f9a507400307c0fa3.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzQzM2Q1MWYzYzVlNTQ2OTFhYzQyNmNkYWUxMGIyNmQxEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzQ2MjAyMDUyMzU3MDIxNzk2MA&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/surfacegate-desk-e9ea083f/stitch/ec629ee7e4a04b5f9a507400307c0fa3.html",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "85bb2f11a64f4c2a8ca646393d1b5d0f",
+    "title": "Ticket Operations - SurfaceGate Desk",
+    "htmlFile": "85bb2f11a64f4c2a8ca646393d1b5d0f.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2FiYzA4YTNhNTlhZTRlMjdiNjU0NmExOTJkMDZmYzQ1EgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzQ2MjAyMDUyMzU3MDIxNzk2MA&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/surfacegate-desk-e9ea083f/stitch/85bb2f11a64f4c2a8ca646393d1b5d0f.html",
+    "surfaceIds": [
+      "SURF_TICKET_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "ec6a76eba11148ea90175e2dc80f0867",
+    "title": "Queue and Status Management - SurfaceGate Desk",
+    "htmlFile": "ec6a76eba11148ea90175e2dc80f0867.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2VmZWJlNjJhMTVkOTQwZjE4YjlkNTQyMWQ5OWEzOWNmEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzQ2MjAyMDUyMzU3MDIxNzk2MA&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/surfacegate-desk-e9ea083f/stitch/ec6a76eba11148ea90175e2dc80f0867.html",
+    "surfaceIds": [
+      "SURF_QUEUE_AND_STATUS_MANAGEMENT"
+    ]
+  },
+  {
+    "screenId": "7378968df848447db5e8acefb5519d2e",
+    "title": "Agent Workload - SurfaceGate Desk",
+    "htmlFile": "7378968df848447db5e8acefb5519d2e.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2MyOWMxODU2OWIzNjQ5NWU4OGNkMmE4MTlmZDYxMjQzEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzQ2MjAyMDUyMzU3MDIxNzk2MA&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/surfacegate-desk-e9ea083f/stitch/7378968df848447db5e8acefb5519d2e.html",
+    "surfaceIds": [
+      "SURF_AGENT_WORKLOAD"
+    ]
+  },
+  {
+    "screenId": "f9634950934049f6bdcf7e3d6b7bee53",
+    "title": "Empty and Error Recovery - SurfaceGate Desk",
+    "htmlFile": "f9634950934049f6bdcf7e3d6b7bee53.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2YxOTUwZWUwNGFmMDRhZmY5MmJhMWI3ZDMyNGRhZDc0EgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzQ2MjAyMDUyMzU3MDIxNzk2MA&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/surfacegate-desk-e9ea083f/stitch/f9634950934049f6bdcf7e3d6b7bee53.html",
+    "surfaceIds": [
+      "SURF_EMPTY_AND_ERROR_RECOVERY"
+    ]
+  },
+  {
+    "screenId": "2f667a39cda94141a804a4e295e73e43",
+    "title": "Settings and Preferences - SurfaceGate Desk",
+    "htmlFile": "2f667a39cda94141a804a4e295e73e43.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2NhN2RhZjllOTM5OTQ4ZTQ4ODU0NmRkZGI1OGUzMjYyEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzQ2MjAyMDUyMzU3MDIxNzk2MA&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/surfacegate-desk-e9ea083f/stitch/2f667a39cda94141a804a4e295e73e43.html",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  }
+]

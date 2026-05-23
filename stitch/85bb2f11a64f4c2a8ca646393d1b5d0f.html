@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ticket Operations - SurfaceGate Desk</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#737685",
+                        "primary-fixed": "#dae2ff",
+                        "on-tertiary-container": "#ffc6b2",
+                        "surface-tint": "#0c56d0",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "inverse-on-surface": "#edf0ff",
+                        "on-secondary-container": "#51617e",
+                        "tertiary-fixed": "#ffdbcf",
+                        "surface-container-high": "#e1e8ff",
+                        "surface-container": "#e9edff",
+                        "surface": "#faf9ff",
+                        "on-secondary-fixed-variant": "#374763",
+                        "primary": "#003d9b",
+                        "tertiary-container": "#a33500",
+                        "inverse-primary": "#b2c5ff",
+                        "secondary-fixed": "#d6e3ff",
+                        "on-tertiary-fixed": "#380d00",
+                        "inverse-surface": "#1d3054",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#0052cc",
+                        "on-surface": "#051a3e",
+                        "secondary": "#4f5f7b",
+                        "surface-variant": "#d8e2ff",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#c4d2ff",
+                        "surface-dim": "#ccdaff",
+                        "on-primary-fixed-variant": "#0040a2",
+                        "secondary-fixed-dim": "#b7c7e8",
+                        "on-error-container": "#93000a",
+                        "background": "#faf9ff",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f1f3ff",
+                        "tertiary": "#7b2600",
+                        "on-secondary-fixed": "#091c35",
+                        "surface-container-highest": "#d8e2ff",
+                        "secondary-container": "#cdddff",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#434654",
+                        "surface-bright": "#faf9ff",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c3c6d6",
+                        "on-tertiary-fixed-variant": "#812800",
+                        "on-primary-fixed": "#001848",
+                        "on-background": "#051a3e",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb59b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sidebar-width": "240px",
+                        "compact-row-height": "36px",
+                        "gutter-table": "8px",
+                        "standard-row-height": "48px",
+                        "unit": "4px",
+                        "container-padding": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "code": ["JetBrains Mono"],
+                        "body-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "code": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02rem", "fontWeight": "600" }],
+                        "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01rem", "fontWeight": "600" }],
+                        "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "label-sm": ["11px", { "lineHeight": "12px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex font-body-md text-body-md">
+<!-- SideNavBar -->
+<nav class="hidden md:flex flex-col h-full w-sidebar-width bg-surface-container-low dark:bg-surface-container-lowest border-r border-outline-variant dark:border-outline sticky top-0 left-0 z-50">
+<!-- Brand -->
+<div class="px-container-padding py-4 border-b border-outline-variant">
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">SurfaceGate</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Service Desk</p>
+</div>
+<!-- CTA -->
+<div class="px-container-padding py-4">
+<button class="w-full bg-primary-container text-on-primary-container font-label-md text-label-md py-2 rounded flex items-center justify-center gap-2 hover:bg-primary transition-colors">
+<span class="material-symbols-outlined" style="font-size: 18px;">add</span>
+                New Ticket
+            </button>
+</div>
+<!-- Navigation Tabs -->
+<div class="flex-1 overflow-y-auto">
+<ul class="flex flex-col py-2">
+<!-- Active Item: Tickets -->
+<li>
+<a class="flex items-center gap-3 px-4 py-3 bg-secondary-container dark:bg-secondary-fixed-dim text-on-secondary-container dark:text-on-secondary-fixed border-l-4 border-primary dark:border-primary-fixed cursor-pointer active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="confirmation_number">confirmation_number</span>
+<span class="font-label-md text-label-md">Tickets</span>
+</a>
+</li>
+<!-- Inactive Items -->
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors duration-150 cursor-pointer active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="queue">queue</span>
+<span class="font-label-md text-label-md">Queues</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors duration-150 cursor-pointer active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-label-md text-label-md">Agents</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors duration-150 cursor-pointer active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-label-md text-label-md">Insights</span>
+</a>
+</li>
+</ul>
+</div>
+<!-- Footer Navigation -->
+<div class="border-t border-outline-variant py-2">
+<ul class="flex flex-col">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span class="font-label-md text-label-md">Help</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col min-w-0 bg-surface">
+<!-- TopNavBar (Mobile Header Fallback or Auxiliary Actions) -->
+<header class="h-standard-row-height sticky top-0 z-40 w-full flex items-center justify-between px-container-padding bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline md:hidden">
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="font-headline-md text-headline-md font-black text-primary dark:text-primary-fixed">SurfaceGate</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="search">search</span>
+<button class="bg-primary-container text-on-primary-container px-3 py-1 rounded font-label-sm text-label-sm">Create</button>
+</div>
+</header>
+<!-- Workspace Layout -->
+<div class="flex-1 flex flex-col xl:flex-row overflow-hidden relative">
+<!-- Center Column (List/Table) -->
+<div class="flex-1 flex flex-col min-w-0 max-w-[1600px] mx-auto w-full border-r border-outline-variant">
+<!-- Toolbar Area -->
+<div class="px-container-padding py-4 flex flex-col sm:flex-row gap-4 items-center justify-between border-b border-outline-variant bg-surface-bright">
+<!-- Search & Filter -->
+<div class="flex-1 flex items-center gap-2 max-w-2xl w-full">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-2.5 top-1.5 text-on-surface-variant" style="font-size: 20px;">search</span>
+<input class="w-full h-8 pl-9 pr-3 py-1 border border-outline-variant rounded bg-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow" placeholder="Search tickets..." type="text"/>
+</div>
+<button class="h-8 px-3 flex items-center gap-1 border border-secondary text-secondary rounded bg-transparent hover:bg-surface-container-high transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined" style="font-size: 16px;">filter_list</span>
+                            Filter
+                        </button>
+</div>
+<!-- Metrics Summary -->
+<div class="flex items-center gap-6">
+<div class="flex flex-col items-end">
+<span class="font-headline-lg text-headline-lg text-on-surface leading-none">142</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Open</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-lg text-headline-lg text-tertiary leading-none">12</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SLA at Risk</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-lg text-headline-lg text-error leading-none">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Overdue</span>
+</div>
+</div>
+</div>
+<!-- Table Container -->
+<div class="flex-1 overflow-auto bg-surface relative">
+<table class="w-full text-left whitespace-nowrap border-collapse">
+<thead class="sticky top-0 bg-surface-container-low border-b border-outline-variant z-10 shadow-sm">
+<tr>
+<th class="px-4 py-2 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider w-10">
+<input class="rounded border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+</th>
+<th class="px-4 py-2 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider w-24">ID</th>
+<th class="px-4 py-2 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Subject</th>
+<th class="px-4 py-2 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider w-32">Status</th>
+<th class="px-4 py-2 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider w-24">Priority</th>
+<th class="px-4 py-2 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider w-40">Assignee</th>
+<th class="px-4 py-2 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider w-32">SLA</th>
+<th class="px-4 py-2 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider w-16"></th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm">
+<!-- Active/Selected Row -->
+<tr class="h-standard-row-height border-b border-outline-variant bg-surface-container-high hover:bg-surface-container-highest cursor-pointer relative">
+<td class="px-4">
+<div class="absolute left-0 top-0 bottom-0 w-[3px] bg-primary"></div>
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+</td>
+<td class="px-4 font-code text-code text-on-surface-variant">SRV-8942</td>
+<td class="px-4 text-on-surface font-medium truncate max-w-[300px]">Network switch failure in Building 4 - Urgent reset required</td>
+<td class="px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-tertiary-fixed text-on-tertiary-fixed">In Progress</span>
+</td>
+<td class="px-4 text-error font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> High
+                                </td>
+<td class="px-4 text-on-surface-variant flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-[10px] text-on-secondary-container font-bold">AK</div>
+                                    A. Kumar
+                                </td>
+<td class="px-4">
+<div class="flex flex-col gap-1 w-full max-w-[100px]">
+<span class="text-[11px] text-tertiary font-medium">45m remaining</span>
+<div class="w-full bg-surface-variant h-0.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full" style="width: 80%"></div>
+</div>
+</div>
+</td>
+<td class="px-4 text-right">
+<button class="text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined" style="font-size: 18px;">more_vert</span></button>
+</td>
+</tr>
+<!-- Standard Row 1 -->
+<tr class="h-standard-row-height border-b border-outline-variant hover:bg-surface-container cursor-pointer transition-colors">
+<td class="px-4"><input class="rounded border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox"/></td>
+<td class="px-4 font-code text-code text-on-surface-variant">SRV-8941</td>
+<td class="px-4 text-on-surface truncate max-w-[300px]">Request for software license renewal (Adobe Creative Cloud)</td>
+<td class="px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-variant text-on-surface-variant">Open</span>
+</td>
+<td class="px-4 text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">remove</span> Medium
+                                </td>
+<td class="px-4 text-on-surface-variant flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-primary-container flex items-center justify-center text-[10px] text-on-primary-container font-bold">SJ</div>
+                                    S. Jones
+                                </td>
+<td class="px-4">
+<div class="flex flex-col gap-1 w-full max-w-[100px]">
+<span class="text-[11px] text-primary font-medium">4h 30m remaining</span>
+<div class="w-full bg-surface-variant h-0.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 30%"></div>
+</div>
+</div>
+</td>
+<td class="px-4 text-right">
+<button class="text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined" style="font-size: 18px;">more_vert</span></button>
+</td>
+</tr>
+<!-- Standard Row 2 -->
+<tr class="h-standard-row-height border-b border-outline-variant hover:bg-surface-container cursor-pointer transition-colors">
+<td class="px-4"><input class="rounded border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox"/></td>
+<td class="px-4 font-code text-code text-on-surface-variant">SRV-8938</td>
+<td class="px-4 text-on-surface truncate max-w-[300px]">New employee onboarding setup for Marketing dept</td>
+<td class="px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-variant text-on-surface-variant">Open</span>
+</td>
+<td class="px-4 text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> Low
+                                </td>
+<td class="px-4 text-on-surface-variant flex items-center gap-2">
+<span class="text-outline italic text-[11px]">Unassigned</span>
+</td>
+<td class="px-4">
+<div class="flex flex-col gap-1 w-full max-w-[100px]">
+<span class="text-[11px] text-on-surface-variant font-medium">1d 4h remaining</span>
+<div class="w-full bg-surface-variant h-0.5 rounded-full overflow-hidden">
+<div class="bg-outline h-full" style="width: 10%"></div>
+</div>
+</div>
+</td>
+<td class="px-4 text-right">
+<button class="text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined" style="font-size: 18px;">more_vert</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Right Sidebar: Selected Item Preview -->
+<div class="hidden xl:flex flex-col w-[380px] bg-surface border-l border-outline-variant z-20 overflow-y-auto">
+<!-- Preview Header -->
+<div class="p-container-padding border-b border-outline-variant bg-surface-container-low sticky top-0">
+<div class="flex justify-between items-start mb-2">
+<span class="font-code text-code text-on-surface-variant">SRV-8942</span>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined" style="font-size: 20px;">close</span></button>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-3 leading-snug">Network switch failure in Building 4 - Urgent reset required</h2>
+<div class="flex gap-2">
+<button class="flex-1 bg-primary text-on-primary font-label-md text-label-md py-1.5 rounded flex items-center justify-center gap-1 hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined" style="font-size: 16px;">edit</span> Edit
+                        </button>
+<button class="flex-1 border border-secondary text-secondary font-label-md text-label-md py-1.5 rounded flex items-center justify-center gap-1 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" style="font-size: 16px;">forum</span> Comment
+                        </button>
+</div>
+</div>
+<!-- Attributes Grid -->
+<div class="p-container-padding border-b border-outline-variant">
+<div class="grid grid-cols-2 gap-y-4 gap-x-2 text-body-sm">
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-1">Status</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-tertiary-fixed text-on-tertiary-fixed">In Progress</span>
+</div>
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-1">Priority</span>
+<span class="text-error font-medium flex items-center gap-1 text-[13px]"><span class="material-symbols-outlined text-[14px]">arrow_upward</span> High</span>
+</div>
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-1">Assignee</span>
+<span class="text-on-surface flex items-center gap-2 text-[13px]">
+<div class="w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-[10px] text-on-secondary-container font-bold">AK</div>
+                                Amit Kumar
+                            </span>
+</div>
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-1">Requester</span>
+<span class="text-on-surface text-[13px]">Elena Rostova</span>
+</div>
+</div>
+</div>
+<!-- Activity Feed -->
+<div class="p-container-padding flex-1">
+<h3 class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-4">Activity</h3>
+<div class="relative border-l-2 border-surface-variant ml-2 space-y-6">
+<!-- Activity Item -->
+<div class="relative pl-6">
+<div class="absolute w-3 h-3 bg-tertiary rounded-full -left-[7px] top-1 border-2 border-surface"></div>
+<div class="text-[12px] text-on-surface-variant mb-1">10 mins ago • System</div>
+<div class="bg-surface-container rounded p-3 text-body-sm border border-outline-variant">
+                                Status changed from <span class="font-medium text-on-surface">Open</span> to <span class="font-medium text-on-surface">In Progress</span>
+</div>
+</div>
+<!-- Comment Item -->
+<div class="relative pl-6">
+<div class="absolute w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-[10px] text-on-secondary-container font-bold -left-[11px] top-0 border-2 border-surface">AK</div>
+<div class="text-[12px] text-on-surface-variant mb-1">45 mins ago • Amit Kumar</div>
+<div class="bg-surface-container-high rounded p-3 text-body-sm text-on-surface border border-outline-variant">
+                                I'm heading over to Building 4 now to check the physical connections before initiating a remote reset.
+                            </div>
+</div>
+<!-- Creation Item -->
+<div class="relative pl-6">
+<div class="absolute w-3 h-3 bg-outline-variant rounded-full -left-[7px] top-1 border-2 border-surface"></div>
+<div class="text-[12px] text-on-surface-variant mb-1">2 hours ago • Elena Rostova</div>
+<div class="text-body-sm text-on-surface-variant italic">
+                                Ticket created via Email Support Channel.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>
