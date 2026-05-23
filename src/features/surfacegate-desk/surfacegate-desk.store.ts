@@ -31,6 +31,7 @@ export interface SurfaceGateDeskState extends SurfaceGateDeskSnapshot {
 }
 
 export interface SurfaceGateDeskActions {
+  hydrate: (snapshot: SurfaceGateDeskSnapshot, status: StorageStatus, error: string | null) => void;
   navigate: (screen: SurfaceGateScreen) => void;
   selectRecord: (recordId: string | null) => void;
   setActivePanel: (panel: string) => void;
@@ -48,6 +49,14 @@ export interface SurfaceGateDeskStore {
   subscribe: (listener: (state: SurfaceGateDeskState) => void) => () => void;
   getSnapshot: () => SurfaceGateDeskState;
 }
+
+export const surfaceGateDeskMessages = {
+  loaded: 'SurfaceGate Desk loaded.',
+  storageUnavailable: 'Storage unavailable.',
+  storageUnavailableDetail: 'Unable to save SurfaceGate Desk state.',
+  storageRecoveredDetail: 'Recovered from corrupted local SurfaceGate Desk data.',
+  storageRecoveredAction: 'Recovered local data.',
+} as const;
 
 export const surfaceGateRouteByScreen: Record<SurfaceGateScreen, string> = {
   tickets: '/tickets',
@@ -77,14 +86,25 @@ export function createSurfaceGateDeskStore(
     ...initialSnapshot,
     storageStatus: 'idle',
     lastError: null,
-    lastAction: 'SurfaceGate Desk loaded.',
+    lastAction: surfaceGateDeskMessages.loaded,
     itemCount: getItemCount(initialSnapshot.counts),
   };
 
   const listeners = new Set<(nextState: SurfaceGateDeskState) => void>();
 
   const emit = () => {
-    persist?.(state);
+    try {
+      persist?.(state);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : surfaceGateDeskMessages.storageUnavailableDetail;
+      state = {
+        ...state,
+        storageStatus: 'unavailable',
+        lastError: message,
+        lastAction: surfaceGateDeskMessages.storageUnavailable,
+      };
+    }
+
     listeners.forEach((listener) => listener(state));
   };
 
@@ -94,6 +114,15 @@ export function createSurfaceGateDeskStore(
   };
 
   const actions: SurfaceGateDeskActions = {
+    hydrate(snapshot, status, error) {
+      update({
+        ...snapshot,
+        storageStatus: status,
+        lastError: error,
+        lastAction: status === 'recovered' ? surfaceGateDeskMessages.storageRecoveredAction : surfaceGateDeskMessages.loaded,
+        itemCount: getItemCount(snapshot.counts),
+      });
+    },
     navigate(screen) {
       update({
         activeScreen: screen,
@@ -137,8 +166,8 @@ export function createSurfaceGateDeskStore(
     recoverStorage() {
       update({
         storageStatus: 'recovered',
-        lastError: 'Recovered from corrupted local SurfaceGate Desk data.',
-        lastAction: 'Recovered local data.',
+        lastError: surfaceGateDeskMessages.storageRecoveredDetail,
+        lastAction: surfaceGateDeskMessages.storageRecoveredAction,
       });
     },
     acknowledgeAction(action) {

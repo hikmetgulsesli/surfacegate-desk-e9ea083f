@@ -1,4 +1,4 @@
-import type { SurfaceGateDeskSnapshot, SurfaceGateDeskState } from './surfacegate-desk.store';
+import { surfaceGateDeskMessages, type SurfaceGateDeskSnapshot, type SurfaceGateDeskState } from './surfacegate-desk.store';
 
 const STORAGE_KEY = 'surfacegate-desk:v1';
 
@@ -30,7 +30,7 @@ export function createSurfaceGateDeskRepository(
         return {
           snapshot: fallback,
           recovered: true,
-          error: 'Recovered from corrupted local SurfaceGate Desk data.',
+          error: surfaceGateDeskMessages.storageRecoveredDetail,
         };
       }
     },
@@ -61,16 +61,47 @@ function normalizeSnapshot(value: unknown, fallback: SurfaceGateDeskSnapshot): S
   }
 
   const candidate = value as Partial<SurfaceGateDeskSnapshot>;
+  const activeScreen = isSurfaceGateScreen(candidate.activeScreen) ? candidate.activeScreen : fallback.activeScreen;
+  const selectedRecordId = typeof candidate.selectedRecordId === 'string' || candidate.selectedRecordId === null
+    ? candidate.selectedRecordId
+    : fallback.selectedRecordId;
+
   return {
     ...fallback,
-    ...candidate,
-    counts: { ...fallback.counts, ...candidate.counts },
+    activeScreen,
+    activeRoute: typeof candidate.activeRoute === 'string' ? candidate.activeRoute : fallback.activeRoute,
+    activePanel: typeof candidate.activePanel === 'string' ? candidate.activePanel : fallback.activePanel,
+    selectedRecordId,
+    counts: {
+      tickets: getFiniteCount(candidate.counts?.tickets, fallback.counts.tickets),
+      queues: getFiniteCount(candidate.counts?.queues, fallback.counts.queues),
+      agents: getFiniteCount(candidate.counts?.agents, fallback.counts.agents),
+      breached: getFiniteCount(candidate.counts?.breached, fallback.counts.breached),
+    },
     preferences: {
       ...fallback.preferences,
-      ...candidate.preferences,
+      density: candidate.preferences?.density === 'compact' || candidate.preferences?.density === 'comfortable'
+        ? candidate.preferences.density
+        : fallback.preferences.density,
       filters: Array.isArray(candidate.preferences?.filters)
         ? candidate.preferences.filters.filter((filter): filter is string => typeof filter === 'string')
         : fallback.preferences.filters,
     },
   };
+}
+
+function isSurfaceGateScreen(value: unknown): value is SurfaceGateDeskSnapshot['activeScreen'] {
+  return (
+    value === 'tickets' ||
+    value === 'queues' ||
+    value === 'agents' ||
+    value === 'insights' ||
+    value === 'settings' ||
+    value === 'help' ||
+    value === 'editor'
+  );
+}
+
+function getFiniteCount(value: unknown, fallback: number) {
+  return typeof value === 'number' && Number.isFinite(value) && value >= 0 ? value : fallback;
 }
