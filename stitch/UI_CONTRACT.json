@@ -1,0 +1,1334 @@
+[
+  {
+    "screenId": "f0ca6681211e4c8ebb895b9bab3af35a",
+    "screenTitle": "Ticket Editor - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Go Back",
+        "line": 114
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "Changes",
+        "line": 192
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 137
+      },
+      {
+        "type": "input",
+        "label": "textarea",
+        "inputType": "textarea",
+        "line": 145
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 157
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 169
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 183
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 131
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Go Back",
+        "line": 114
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "Changes",
+        "line": 192
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 137
+      },
+      {
+        "type": "input",
+        "label": "textarea",
+        "inputType": "textarea",
+        "line": 145
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 157
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 169
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 183
+      }
+    ],
+    "hardcodedData": [
+      "John Doe"
+    ],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "ec629ee7e4a04b5f9a507400307c0fa3",
+    "screenTitle": "Insights - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Tickets",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Queues",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "Agents",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 166
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 170
+      },
+      {
+        "type": "button",
+        "label": "New Ticket",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "Account",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 202
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 217
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 272
+      },
+      {
+        "type": "button",
+        "label": "View Breached Tickets",
+        "line": 279
+      },
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 192
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Tickets",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Queues",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "Agents",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 166
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 170
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Ticket",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "Account",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 202
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 217
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 272
+      },
+      {
+        "type": "button",
+        "label": "View Breached Tickets",
+        "line": 279
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 192
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 16,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "85bb2f11a64f4c2a8ca646393d1b5d0f",
+    "screenTitle": "Ticket Operations - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Tickets",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "link",
+        "label": "Queues",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "Agents",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "button",
+        "label": "New Ticket",
+        "line": 112
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "Create",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 259
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 286
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 312
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 325
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 329
+      },
+      {
+        "type": "button",
+        "label": "Comment",
+        "line": 332
+      },
+      {
+        "type": "input",
+        "label": "Search tickets...",
+        "inputType": "text",
+        "placeholder": "Search tickets...",
+        "line": 191
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 220
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 236
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 264
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 291
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Tickets",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "link",
+        "label": "Queues",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "Agents",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 158
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Ticket",
+        "line": 112
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "Create",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 259
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 286
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 312
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 325
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 329
+      },
+      {
+        "type": "button",
+        "label": "Comment",
+        "line": 332
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search tickets...",
+        "inputType": "text",
+        "placeholder": "Search tickets...",
+        "line": 191
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 220
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 236
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 264
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 291
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 21,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "ec6a76eba11148ea90175e2dc80f0867",
+    "screenTitle": "Queue and Status Management - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Tickets",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Queues",
+        "href": "#",
+        "line": 143
+      },
+      {
+        "type": "link",
+        "label": "Agents",
+        "href": "#",
+        "line": 147
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 151
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "New Ticket",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 187
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 191
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 218
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 229
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 255
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 280
+      },
+      {
+        "type": "input",
+        "label": "Search queues, tickets...",
+        "inputType": "text",
+        "placeholder": "Search queues, tickets...",
+        "line": 182
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 206
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Tickets",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Queues",
+        "href": "#",
+        "line": 143
+      },
+      {
+        "type": "link",
+        "label": "Agents",
+        "href": "#",
+        "line": 147
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 151
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 162
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Ticket",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 187
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 191
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 218
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 229
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 255
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 280
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search queues, tickets...",
+        "inputType": "text",
+        "placeholder": "Search queues, tickets...",
+        "line": 182
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 206
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 16,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "7378968df848447db5e8acefb5519d2e",
+    "screenTitle": "Agent Workload - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 147
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 150
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 214
+      },
+      {
+        "type": "button",
+        "label": "Reassign",
+        "line": 302
+      },
+      {
+        "type": "button",
+        "label": "Assign",
+        "line": 337
+      },
+      {
+        "type": "button",
+        "label": "Assign",
+        "line": 372
+      },
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 141
+      },
+      {
+        "type": "input",
+        "label": "Find agent...",
+        "inputType": "text",
+        "placeholder": "Find agent...",
+        "line": 212
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 147
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 150
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 214
+      },
+      {
+        "type": "button",
+        "label": "Reassign",
+        "line": 302
+      },
+      {
+        "type": "button",
+        "label": "Assign",
+        "line": 337
+      },
+      {
+        "type": "button",
+        "label": "Assign",
+        "line": 372
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 141
+      },
+      {
+        "type": "input",
+        "label": "Find agent...",
+        "inputType": "text",
+        "placeholder": "Find agent...",
+        "line": 212
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "f9634950934049f6bdcf7e3d6b7bee53",
+    "screenTitle": "Empty and Error Recovery - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Tickets",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Queues",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Agents",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "Help",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 164
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Clear All Filters",
+        "line": 212
+      },
+      {
+        "type": "button",
+        "label": "Create New Ticket",
+        "line": 216
+      },
+      {
+        "type": "input",
+        "label": "Search tickets...",
+        "inputType": "text",
+        "placeholder": "Search tickets...",
+        "line": 173
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Tickets",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Queues",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Agents",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "Help",
+        "href": "#",
+        "line": 152
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 164
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Clear All Filters",
+        "line": 212
+      },
+      {
+        "type": "button",
+        "label": "Create New Ticket",
+        "line": 216
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search tickets...",
+        "inputType": "text",
+        "placeholder": "Search tickets...",
+        "line": 173
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 13,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "2f667a39cda94141a804a4e295e73e43",
+    "screenTitle": "Settings and Preferences - SurfaceGate Desk",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Tickets",
+        "href": "#",
+        "line": 115
+      },
+      {
+        "type": "link",
+        "label": "Queues",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Agents",
+        "href": "#",
+        "line": 123
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 127
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Help",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 133
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 153
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 165
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 175
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 206
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 215
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 216
+      },
+      {
+        "type": "button",
+        "label": "Reset all preferences to system default",
+        "line": 270
+      },
+      {
+        "type": "button",
+        "label": "Retry Loading",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "Save Changes",
+        "line": 284
+      },
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 161
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 226
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 235
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 248
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 256
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 260
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Tickets",
+        "href": "#",
+        "line": 115
+      },
+      {
+        "type": "link",
+        "label": "Queues",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Agents",
+        "href": "#",
+        "line": 123
+      },
+      {
+        "type": "link",
+        "label": "insights",
+        "href": "#",
+        "line": 127
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Help",
+        "href": "#",
+        "line": 142
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 133
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 153
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 165
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "Create Ticket",
+        "line": 175
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 206
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 215
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 216
+      },
+      {
+        "type": "button",
+        "label": "Reset all preferences to system default",
+        "line": 270
+      },
+      {
+        "type": "button",
+        "label": "Retry Loading",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "Save Changes",
+        "line": 284
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 161
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 226
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 235
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 248
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 256
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 260
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 26,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
