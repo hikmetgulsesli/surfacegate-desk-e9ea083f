@@ -14,6 +14,19 @@ body {
   min-height: 100vh;
 }
 
+.surfacegate-state-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  border-bottom: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #334155;
+  padding: 0.625rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
 .surfacegate-recovery-banner {
   position: sticky;
   top: 0;

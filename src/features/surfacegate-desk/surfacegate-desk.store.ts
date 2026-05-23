@@ -26,6 +26,8 @@ export interface SurfaceGateDeskSnapshot {
 export interface SurfaceGateDeskState extends SurfaceGateDeskSnapshot {
   storageStatus: StorageStatus;
   lastError: string | null;
+  lastAction: string;
+  itemCount: number;
 }
 
 export interface SurfaceGateDeskActions {
@@ -37,6 +39,7 @@ export interface SurfaceGateDeskActions {
   clearFilters: () => void;
   savePreferences: (preferences: Partial<SurfaceGatePreferences>) => void;
   recoverStorage: () => void;
+  acknowledgeAction: (action: string) => void;
 }
 
 export interface SurfaceGateDeskStore {
@@ -74,6 +77,8 @@ export function createSurfaceGateDeskStore(
     ...initialSnapshot,
     storageStatus: 'idle',
     lastError: null,
+    lastAction: 'SurfaceGate Desk loaded.',
+    itemCount: getItemCount(initialSnapshot.counts),
   };
 
   const listeners = new Set<(nextState: SurfaceGateDeskState) => void>();
@@ -94,27 +99,31 @@ export function createSurfaceGateDeskStore(
         activeScreen: screen,
         activeRoute: surfaceGateRouteByScreen[screen],
         activePanel: panelByScreen[screen],
+        lastAction: `Opened ${screen}.`,
       });
     },
     selectRecord(recordId) {
       update({
         selectedRecordId: recordId,
         activePanel: recordId ? 'ticket-detail' : panelByScreen[state.activeScreen],
+        lastAction: recordId ? `Selected ${recordId}.` : 'Selection cleared.',
       });
     },
     setActivePanel(panel) {
-      update({ activePanel: panel });
+      update({ activePanel: panel, lastAction: `Opened ${panel}.` });
     },
     setLastError(message) {
-      update({ lastError: message });
+      update({ lastError: message, lastAction: message ? 'Error surfaced.' : 'Error cleared.' });
     },
     setStorageStatus(status) {
-      update({ storageStatus: status });
+      update({ storageStatus: status, lastAction: `Storage ${status}.` });
     },
     clearFilters() {
       update({
         preferences: { ...state.preferences, filters: [] },
         lastError: null,
+        storageStatus: 'ready',
+        lastAction: 'Cleared all filters.',
       });
     },
     savePreferences(preferences) {
@@ -122,13 +131,18 @@ export function createSurfaceGateDeskStore(
         preferences: { ...state.preferences, ...preferences },
         storageStatus: 'ready',
         lastError: null,
+        lastAction: 'Preferences saved.',
       });
     },
     recoverStorage() {
       update({
         storageStatus: 'recovered',
         lastError: 'Recovered from corrupted local SurfaceGate Desk data.',
+        lastAction: 'Recovered local data.',
       });
+    },
+    acknowledgeAction(action) {
+      update({ activePanel: action, lastAction: `Ran ${action}.` });
     },
   };
 
@@ -145,4 +159,8 @@ export function createSurfaceGateDeskStore(
       return state;
     },
   };
+}
+
+function getItemCount(counts: SurfaceGateCounts) {
+  return counts.tickets + counts.queues + counts.agents;
 }
