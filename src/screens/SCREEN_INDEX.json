@@ -1,0 +1,637 @@
+[
+  {
+    "screenId": "f0ca6681211e4c8ebb895b9bab3af35a",
+    "title": "Ticket Editor - SurfaceGate Desk",
+    "componentName": "TicketEditorSurfacegateDesk",
+    "file": "src/screens/TicketEditorSurfacegateDesk.tsx",
+    "buttons": 3,
+    "inputs": 2,
+    "links": 0,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "cancel-2",
+        "kind": "button",
+        "label": "Cancel",
+        "index": 1
+      },
+      {
+        "id": "save-changes-3",
+        "kind": "button",
+        "label": "Save Changes",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "screenId": "ec629ee7e4a04b5f9a507400307c0fa3",
+    "title": "Insights - SurfaceGate Desk",
+    "componentName": "InsightsSurfacegateDesk",
+    "file": "src/screens/InsightsSurfacegateDesk.tsx",
+    "buttons": 9,
+    "inputs": 1,
+    "links": 6,
+    "actions": [
+      {
+        "id": "new-ticket-1",
+        "kind": "button",
+        "label": "New Ticket",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      },
+      {
+        "id": "button-4-4",
+        "kind": "button",
+        "label": "Button 4",
+        "index": 3
+      },
+      {
+        "id": "create-ticket-5",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 4
+      },
+      {
+        "id": "filter-6",
+        "kind": "button",
+        "label": "Filter",
+        "index": 5
+      },
+      {
+        "id": "export-7",
+        "kind": "button",
+        "label": "Export",
+        "index": 6
+      },
+      {
+        "id": "button-8-8",
+        "kind": "button",
+        "label": "Button 8",
+        "index": 7
+      },
+      {
+        "id": "view-breached-tickets-9",
+        "kind": "button",
+        "label": "View Breached Tickets",
+        "index": 8
+      },
+      {
+        "id": "tickets-1",
+        "kind": "link",
+        "label": "Tickets",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queues-2",
+        "kind": "link",
+        "label": "Queues",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agents-3",
+        "kind": "link",
+        "label": "Agents",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "help-6",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "screenId": "85bb2f11a64f4c2a8ca646393d1b5d0f",
+    "title": "Ticket Operations - SurfaceGate Desk",
+    "componentName": "TicketOperationsSurfacegateDesk",
+    "file": "src/screens/TicketOperationsSurfacegateDesk.tsx",
+    "buttons": 10,
+    "inputs": 5,
+    "links": 6,
+    "actions": [
+      {
+        "id": "new-ticket-1",
+        "kind": "button",
+        "label": "New Ticket",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "create-3",
+        "kind": "button",
+        "label": "Create",
+        "index": 2
+      },
+      {
+        "id": "filter-4",
+        "kind": "button",
+        "label": "Filter",
+        "index": 3
+      },
+      {
+        "id": "button-5-5",
+        "kind": "button",
+        "label": "Button 5",
+        "index": 4
+      },
+      {
+        "id": "button-6-6",
+        "kind": "button",
+        "label": "Button 6",
+        "index": 5
+      },
+      {
+        "id": "button-7-7",
+        "kind": "button",
+        "label": "Button 7",
+        "index": 6
+      },
+      {
+        "id": "button-8-8",
+        "kind": "button",
+        "label": "Button 8",
+        "index": 7
+      },
+      {
+        "id": "edit-9",
+        "kind": "button",
+        "label": "Edit",
+        "index": 8
+      },
+      {
+        "id": "comment-10",
+        "kind": "button",
+        "label": "Comment",
+        "index": 9
+      },
+      {
+        "id": "tickets-1",
+        "kind": "link",
+        "label": "Tickets",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queues-2",
+        "kind": "link",
+        "label": "Queues",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agents-3",
+        "kind": "link",
+        "label": "Agents",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "help-6",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "screenId": "ec6a76eba11148ea90175e2dc80f0867",
+    "title": "Queue and Status Management - SurfaceGate Desk",
+    "componentName": "QueueAndStatusManagementSurfacegateDesk",
+    "file": "src/screens/QueueAndStatusManagementSurfacegateDesk.tsx",
+    "buttons": 9,
+    "inputs": 1,
+    "links": 6,
+    "actions": [
+      {
+        "id": "new-ticket-1",
+        "kind": "button",
+        "label": "New Ticket",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "create-ticket-3",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 2
+      },
+      {
+        "id": "button-4-4",
+        "kind": "button",
+        "label": "Button 4",
+        "index": 3
+      },
+      {
+        "id": "button-5-5",
+        "kind": "button",
+        "label": "Button 5",
+        "index": 4
+      },
+      {
+        "id": "filter-6",
+        "kind": "button",
+        "label": "Filter",
+        "index": 5
+      },
+      {
+        "id": "button-7-7",
+        "kind": "button",
+        "label": "Button 7",
+        "index": 6
+      },
+      {
+        "id": "button-8-8",
+        "kind": "button",
+        "label": "Button 8",
+        "index": 7
+      },
+      {
+        "id": "button-9-9",
+        "kind": "button",
+        "label": "Button 9",
+        "index": 8
+      },
+      {
+        "id": "tickets-1",
+        "kind": "link",
+        "label": "Tickets",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queues-2",
+        "kind": "link",
+        "label": "Queues",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agents-3",
+        "kind": "link",
+        "label": "Agents",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "help-6",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "screenId": "7378968df848447db5e8acefb5519d2e",
+    "title": "Agent Workload - SurfaceGate Desk",
+    "componentName": "AgentWorkloadSurfacegateDesk",
+    "file": "src/screens/AgentWorkloadSurfacegateDesk.tsx",
+    "buttons": 7,
+    "inputs": 2,
+    "links": 0,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "create-ticket-3",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 2
+      },
+      {
+        "id": "filter-4",
+        "kind": "button",
+        "label": "Filter",
+        "index": 3
+      },
+      {
+        "id": "reassign-5",
+        "kind": "button",
+        "label": "Reassign",
+        "index": 4
+      },
+      {
+        "id": "assign-6",
+        "kind": "button",
+        "label": "Assign",
+        "index": 5
+      },
+      {
+        "id": "assign-7",
+        "kind": "button",
+        "label": "Assign",
+        "index": 6
+      }
+    ]
+  },
+  {
+    "screenId": "f9634950934049f6bdcf7e3d6b7bee53",
+    "title": "Empty and Error Recovery - SurfaceGate Desk",
+    "componentName": "EmptyAndErrorRecoverySurfacegateDesk",
+    "file": "src/screens/EmptyAndErrorRecoverySurfacegateDesk.tsx",
+    "buttons": 6,
+    "inputs": 1,
+    "links": 6,
+    "actions": [
+      {
+        "id": "create-ticket-1",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      },
+      {
+        "id": "button-4-4",
+        "kind": "button",
+        "label": "Button 4",
+        "index": 3
+      },
+      {
+        "id": "clear-all-filters-5",
+        "kind": "button",
+        "label": "Clear All Filters",
+        "index": 4
+      },
+      {
+        "id": "create-new-ticket-6",
+        "kind": "button",
+        "label": "Create New Ticket",
+        "index": 5
+      },
+      {
+        "id": "tickets-1",
+        "kind": "link",
+        "label": "Tickets",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queues-2",
+        "kind": "link",
+        "label": "Queues",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agents-3",
+        "kind": "link",
+        "label": "Agents",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "help-6",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "screenId": "2f667a39cda94141a804a4e295e73e43",
+    "title": "Settings and Preferences - SurfaceGate Desk",
+    "componentName": "SettingsAndPreferencesSurfacegateDesk",
+    "file": "src/screens/SettingsAndPreferencesSurfacegateDesk.tsx",
+    "buttons": 14,
+    "inputs": 4,
+    "links": 6,
+    "actions": [
+      {
+        "id": "create-ticket-1",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      },
+      {
+        "id": "button-4-4",
+        "kind": "button",
+        "label": "Button 4",
+        "index": 3
+      },
+      {
+        "id": "button-5-5",
+        "kind": "button",
+        "label": "Button 5",
+        "index": 4
+      },
+      {
+        "id": "create-ticket-6",
+        "kind": "button",
+        "label": "Create Ticket",
+        "index": 5
+      },
+      {
+        "id": "add-filter-7",
+        "kind": "button",
+        "label": "Add Filter",
+        "index": 6
+      },
+      {
+        "id": "button-8-8",
+        "kind": "button",
+        "label": "Button 8",
+        "index": 7
+      },
+      {
+        "id": "button-9-9",
+        "kind": "button",
+        "label": "Button 9",
+        "index": 8
+      },
+      {
+        "id": "button-10-10",
+        "kind": "button",
+        "label": "Button 10",
+        "index": 9
+      },
+      {
+        "id": "button-11-11",
+        "kind": "button",
+        "label": "Button 11",
+        "index": 10
+      },
+      {
+        "id": "reset-all-preferences-to-system-default-12",
+        "kind": "button",
+        "label": "Reset all preferences to system default",
+        "index": 11
+      },
+      {
+        "id": "retry-loading-13",
+        "kind": "button",
+        "label": "Retry Loading",
+        "index": 12
+      },
+      {
+        "id": "save-changes-14",
+        "kind": "button",
+        "label": "Save Changes",
+        "index": 13
+      },
+      {
+        "id": "tickets-1",
+        "kind": "link",
+        "label": "Tickets",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queues-2",
+        "kind": "link",
+        "label": "Queues",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "agents-3",
+        "kind": "link",
+        "label": "Agents",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "help-6",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 5
+      }
+    ]
+  }
+]
